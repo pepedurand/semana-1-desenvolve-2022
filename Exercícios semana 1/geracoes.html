@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha () {
+
+        document.write("<br>");
+    }
+
+    function mostra (frase) {
+
+        document.write(frase);
+        pulaLinha ();
+
+    }
+    var anoZero = 1500;
+    var anoAtual = 2022;
+    var anosPassados = anoAtual - anoZero;
+    var anosGeracao = 28;
+    var geracoes = anosPassados / anosGeracao;
+
+    mostra ("Se a cada " + anosGeracao + " anos um casal de brasileiros tem filhos.");
+    mostra ("Contando que os portugues chegaram no Brasil em " + anoZero + ".");
+    mostra ("Se passaram " + anosPassados + " anos.")
+    mostra ("Ou seja, já temos " + Math.round(geracoes) + " gerações de brasileiros.")
+
+
+
+</script>
